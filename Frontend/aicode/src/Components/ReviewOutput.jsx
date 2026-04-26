@@ -5,7 +5,7 @@ import { FaCopy } from "react-icons/fa";
 
 const ReviewOutput = ({ response, loading }) => {
 
-  // 🔥 Extract code block from AI response
+  
   const extractCode = (text) => {
     const match = text.match(/```(?:javascript)?\n([\s\S]*?)```/);
     return match ? match[1] : null;
@@ -29,18 +29,18 @@ const ReviewOutput = ({ response, loading }) => {
         </p>
       ) : (
         <>
-          {/* 🔹 TEXT RESPONSE */}
+          
           <div className="bg-gray-900 p-4 rounded-xl border border-gray-700">
             <pre className="whitespace-pre-wrap text-base text-gray-200">
               {response}
             </pre>
           </div>
 
-          {/* 🔥 IMPROVED CODE BLOCK */}
+          
           {improvedCode && (
             <div className="bg-black rounded-xl border border-gray-700 relative">
 
-              {/* Copy Button */}
+              
               <button
                 onClick={handleCopy}
                 className="absolute top-3 right-3 bg-gray-800 hover:bg-gray-700 p-2 rounded-lg"
