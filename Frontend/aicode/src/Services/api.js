@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/ai/get-review";
+//const API_URL = "http://localhost:3000/ai/get-review";
+const API_URL = "https://ai-code-reviewer-2-xj9x.onrender.com/ai/get-review";
 
 export const reviewCode = async (code) => {
   try {
