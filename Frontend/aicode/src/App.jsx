@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CodeInput from "./Components/CodeInput";
 import ReviewOutput from "./Components/ReviewOutput";
-import { reviewCode } from "./Services/api";
+import { reviewCode } from "./services/api";
 
 function App() {
   const [code, setCode] = useState("");
