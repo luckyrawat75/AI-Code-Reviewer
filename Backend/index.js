@@ -15,7 +15,6 @@ dotenv.config({
 });
 
 
-console.log("API KEY:", process.env.GOOGLE_API_KEY);
 
 const app = express();
 
